@@ -40,7 +40,7 @@ def count_clicks(bitly_token, bitlink):
 
 if __name__ == "__main__":
     load_dotenv()
-    bitly_token = os.getenv('BITLY_TOKEN')
+    bitly_token = os.environ["BITLY_TOKEN"]
     long_url = argparse.ArgumentParser(description="Ссылка")
     long_url.add_argument("--url", help="Введите ссылку:")
     url_args = long_url.parse_args()
